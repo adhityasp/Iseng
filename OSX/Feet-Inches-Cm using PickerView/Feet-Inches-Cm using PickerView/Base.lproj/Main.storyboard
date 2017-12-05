@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wGy-fE-GYS"/>
+                        <viewControllerLayoutGuide type="bottom" id="KGJ-2B-oOU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Height here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wvv-oi-gMu">
+                                <rect key="frame" x="8" y="28" width="359" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sQ6-go-tzK">
+                                <rect key="frame" x="8" y="74" width="359" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5w9-pp-Xvi">
+                                <rect key="frame" x="0.0" y="128" width="375" height="216"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5w9-pp-Xvi" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="2cR-0y-a10"/>
+                            <constraint firstItem="sQ6-go-tzK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="R53-od-fcI"/>
+                            <constraint firstItem="Wvv-oi-gMu" firstAttribute="top" secondItem="wGy-fE-GYS" secondAttribute="bottom" constant="8" id="Rle-Tt-Cjl"/>
+                            <constraint firstItem="Wvv-oi-gMu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="Xk8-kc-3IA"/>
+                            <constraint firstAttribute="trailing" secondItem="sQ6-go-tzK" secondAttribute="trailing" constant="8" id="et7-tk-KSt"/>
+                            <constraint firstItem="5w9-pp-Xvi" firstAttribute="top" secondItem="sQ6-go-tzK" secondAttribute="bottom" constant="24" id="fWl-GE-SFu"/>
+                            <constraint firstItem="sQ6-go-tzK" firstAttribute="top" secondItem="Wvv-oi-gMu" secondAttribute="bottom" constant="16" id="q1s-qZ-tYb"/>
+                            <constraint firstItem="Wvv-oi-gMu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q9r-UO-8Jy"/>
+                            <constraint firstItem="5w9-pp-Xvi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vsb-jn-MYh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="originalHeight" destination="Wvv-oi-gMu" id="Adw-sU-Gnj"/>
+                        <outlet property="picker" destination="5w9-pp-Xvi" id="ENg-8Y-mTJ"/>
+                        <outlet property="resultHeight" destination="sQ6-go-tzK" id="wvA-uQ-qPq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

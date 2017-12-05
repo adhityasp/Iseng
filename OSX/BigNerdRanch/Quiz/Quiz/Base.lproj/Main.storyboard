@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDf-II-oM0">
+                                <rect key="frame" x="175" y="176" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKR-Jh-zdk">
+                                <rect key="frame" x="141" y="205" width="93" height="30"/>
+                                <state key="normal" title="Show Answer"/>
+                                <connections>
+                                    <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nlF-dH-yRt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYU-XI-ass">
+                                <rect key="frame" x="138" y="49" width="98" height="30"/>
+                                <state key="normal" title="Next Question"/>
+                                <connections>
+                                    <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M5d-AL-gEF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6s4-JS-1wq">
+                                <rect key="frame" x="175" y="28" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gKR-Jh-zdk" firstAttribute="top" secondItem="wDf-II-oM0" secondAttribute="bottom" constant="8" id="Df5-hV-Tqm"/>
+                            <constraint firstItem="6s4-JS-1wq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FT6-iE-YwE"/>
+                            <constraint firstItem="gKR-Jh-zdk" firstAttribute="centerX" secondItem="DYU-XI-ass" secondAttribute="centerX" id="Mh7-Ty-eQ7"/>
+                            <constraint firstItem="wDf-II-oM0" firstAttribute="centerX" secondItem="DYU-XI-ass" secondAttribute="centerX" id="V0h-Vv-Cx3"/>
+                            <constraint firstItem="6s4-JS-1wq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="VF1-OI-wcg"/>
+                            <constraint firstItem="wDf-II-oM0" firstAttribute="top" secondItem="DYU-XI-ass" secondAttribute="bottom" constant="97" id="WPM-17-uy2"/>
+                            <constraint firstItem="DYU-XI-ass" firstAttribute="top" secondItem="6s4-JS-1wq" secondAttribute="bottom" constant="8" id="o0W-hN-9Va"/>
+                            <constraint firstItem="wDf-II-oM0" firstAttribute="top" secondItem="DYU-XI-ass" secondAttribute="bottom" constant="97" id="wgw-zh-Fkh"/>
+                            <constraint firstItem="6s4-JS-1wq" firstAttribute="centerX" secondItem="DYU-XI-ass" secondAttribute="centerX" id="zHE-ev-iWo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="wDf-II-oM0" id="951-lc-QJz"/>
+                        <outlet property="questionLabel" destination="6s4-JS-1wq" id="PoP-la-WmT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>

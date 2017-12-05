@@ -1,0 +1,8 @@
+====PRIM====
+1. tentukan titik awal & frontier awal
+loop sampai semua titik dilewati
+2. pilih titik random untuk next step nya
+3. masukkan titik baru tersebut ke walk
+4. apus titik baru dari frontier
+5. cari frontier dari titik baru tersebut
+6. apabila titik random sebelahan dengan titik sbelumnya, maka masukkan ke way

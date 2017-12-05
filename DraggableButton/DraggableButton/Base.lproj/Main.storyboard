@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DraggableButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FNt-RX-9bt"/>
+                        <viewControllerLayoutGuide type="bottom" id="1FX-xa-nW9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Draggable Button" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPF-JS-6m0">
+                                <rect key="frame" x="120" y="20" width="135" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Bi1-zh-82F">
+                                <rect key="frame" x="16" y="49" width="343" height="243"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="243" id="3Cx-We-RLe"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Pb6-tf-Kk1">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pb6-tf-Kk1" id="GCx-6f-U9g">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MVL-j5-2XR" customClass="DroppableCollectionView" customModule="DraggableButton" customModuleProvider="target">
+                                <rect key="frame" x="16" y="300" width="343" height="165"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="165" id="xgw-FD-uy4"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CHR-fD-HMx">
+                                    <size key="itemSize" width="38" height="35"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="cAw-Ot-uYS">
+                                        <rect key="frame" x="0.0" y="0.0" width="38" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="38" height="35"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dzg-sx-joW" customClass="DroppableView" customModule="DraggableButton" customModuleProvider="target">
+                                <rect key="frame" x="16" y="473" width="343" height="148"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbz-Jl-MSw">
+                                <rect key="frame" x="164" y="629" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="wPF-JS-6m0" secondAttribute="trailing" constant="104" id="4qN-lV-sgZ"/>
+                            <constraint firstItem="wPF-JS-6m0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="104" id="8uE-b1-jKQ"/>
+                            <constraint firstItem="MVL-j5-2XR" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9Kq-Jk-dbJ"/>
+                            <constraint firstAttribute="trailing" secondItem="dzg-sx-joW" secondAttribute="trailing" constant="16" id="Bde-d1-71l"/>
+                            <constraint firstItem="Bi1-zh-82F" firstAttribute="top" secondItem="wPF-JS-6m0" secondAttribute="bottom" constant="8" id="EWD-Xf-fkI"/>
+                            <constraint firstItem="MVL-j5-2XR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="IQp-7p-uvq"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Hbz-Jl-MSw" secondAttribute="trailing" id="Ltr-Kr-7Ba"/>
+                            <constraint firstItem="1FX-xa-nW9" firstAttribute="top" secondItem="Hbz-Jl-MSw" secondAttribute="bottom" constant="8" id="P8S-IC-xA4"/>
+                            <constraint firstItem="MVL-j5-2XR" firstAttribute="top" secondItem="Bi1-zh-82F" secondAttribute="bottom" constant="8" id="S10-Cr-qEZ"/>
+                            <constraint firstItem="dzg-sx-joW" firstAttribute="top" secondItem="MVL-j5-2XR" secondAttribute="bottom" constant="8" id="bjz-qZ-Od1"/>
+                            <constraint firstItem="MVL-j5-2XR" firstAttribute="top" secondItem="Bi1-zh-82F" secondAttribute="bottom" constant="8" id="cWN-Km-cSA"/>
+                            <constraint firstItem="Hbz-Jl-MSw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="148" id="dFT-w5-JgF"/>
+                            <constraint firstItem="dzg-sx-joW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="ibg-id-TMK"/>
+                            <constraint firstItem="Bi1-zh-82F" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="keo-Pf-OdC"/>
+                            <constraint firstItem="wPF-JS-6m0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nOw-62-Gny"/>
+                            <constraint firstItem="Hbz-Jl-MSw" firstAttribute="top" secondItem="dzg-sx-joW" secondAttribute="bottom" constant="8" id="opg-Tv-e0I"/>
+                            <constraint firstItem="wPF-JS-6m0" firstAttribute="top" secondItem="FNt-RX-9bt" secondAttribute="bottom" id="qxA-AA-009"/>
+                            <constraint firstItem="Bi1-zh-82F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="v4J-k3-WCY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="Hbz-Jl-MSw" id="ncr-P1-Heb"/>
+                        <outlet property="collectionView" destination="MVL-j5-2XR" id="PGK-yb-rro"/>
+                        <outlet property="dragDropView" destination="dzg-sx-joW" id="VbO-Te-TKA"/>
+                        <outlet property="tableView" destination="Bi1-zh-82F" id="FHl-U4-b65"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

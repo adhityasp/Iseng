@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		308F97E0DD9A7483CFC5F40D /* Pods_DraggableButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F412B853626CF061CF11ECD /* Pods_DraggableButton.framework */; };
+		E0B7837D1FB2D3D20018A27E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B7837C1FB2D3D20018A27E /* AppDelegate.swift */; };
+		E0B7837F1FB2D3D20018A27E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B7837E1FB2D3D20018A27E /* ViewController.swift */; };
+		E0B783821FB2D3D20018A27E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0B783801FB2D3D20018A27E /* Main.storyboard */; };
+		E0B783841FB2D3D20018A27E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0B783831FB2D3D20018A27E /* Assets.xcassets */; };
+		E0B783871FB2D3D20018A27E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0B783851FB2D3D20018A27E /* LaunchScreen.storyboard */; };
+		E0B7838F1FB2E69C0018A27E /* DroppableCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B7838E1FB2E69C0018A27E /* DroppableCollectionView.swift */; };
+		E0B783911FB2E7AA0018A27E /* DroppableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B783901FB2E7AA0018A27E /* DroppableView.swift */; };
+		E0B783931FB2ED520018A27E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B783921FB2ED520018A27E /* Model.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1FA88B5DAFEB4C70D1DDA7AE /* Pods-DraggableButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DraggableButton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DraggableButton/Pods-DraggableButton.debug.xcconfig"; sourceTree = "<group>"; };
+		72691D82790DCA9DC5A10559 /* Pods-DraggableButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DraggableButton.release.xcconfig"; path = "Pods/Target Support Files/Pods-DraggableButton/Pods-DraggableButton.release.xcconfig"; sourceTree = "<group>"; };
+		7F412B853626CF061CF11ECD /* Pods_DraggableButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DraggableButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0B783791FB2D3D20018A27E /* DraggableButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DraggableButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0B7837C1FB2D3D20018A27E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E0B7837E1FB2D3D20018A27E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E0B783811FB2D3D20018A27E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E0B783831FB2D3D20018A27E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E0B783861FB2D3D20018A27E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E0B783881FB2D3D20018A27E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0B7838E1FB2E69C0018A27E /* DroppableCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppableCollectionView.swift; sourceTree = "<group>"; };
+		E0B783901FB2E7AA0018A27E /* DroppableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppableView.swift; sourceTree = "<group>"; };
+		E0B783921FB2ED520018A27E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0B783761FB2D3D20018A27E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				308F97E0DD9A7483CFC5F40D /* Pods_DraggableButton.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55C6E100634C4FE752CDD432 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FA88B5DAFEB4C70D1DDA7AE /* Pods-DraggableButton.debug.xcconfig */,
+				72691D82790DCA9DC5A10559 /* Pods-DraggableButton.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AB63F9A73F51812AD0447784 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F412B853626CF061CF11ECD /* Pods_DraggableButton.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0B783701FB2D3D20018A27E = {
+			isa = PBXGroup;
+			children = (
+				E0B7837B1FB2D3D20018A27E /* DraggableButton */,
+				E0B7837A1FB2D3D20018A27E /* Products */,
+				55C6E100634C4FE752CDD432 /* Pods */,
+				AB63F9A73F51812AD0447784 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E0B7837A1FB2D3D20018A27E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0B783791FB2D3D20018A27E /* DraggableButton.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0B7837B1FB2D3D20018A27E /* DraggableButton */ = {
+			isa = PBXGroup;
+			children = (
+				E0B7837C1FB2D3D20018A27E /* AppDelegate.swift */,
+				E0B7837E1FB2D3D20018A27E /* ViewController.swift */,
+				E0B783801FB2D3D20018A27E /* Main.storyboard */,
+				E0B783831FB2D3D20018A27E /* Assets.xcassets */,
+				E0B783851FB2D3D20018A27E /* LaunchScreen.storyboard */,
+				E0B783881FB2D3D20018A27E /* Info.plist */,
+				E0B7838E1FB2E69C0018A27E /* DroppableCollectionView.swift */,
+				E0B783901FB2E7AA0018A27E /* DroppableView.swift */,
+				E0B783921FB2ED520018A27E /* Model.swift */,
+			);
+			path = DraggableButton;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0B783781FB2D3D20018A27E /* DraggableButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0B7838B1FB2D3D20018A27E /* Build configuration list for PBXNativeTarget "DraggableButton" */;
+			buildPhases = (
+				E08AB92AB16675771409BE29 /* [CP] Check Pods Manifest.lock */,
+				E0B783751FB2D3D20018A27E /* Sources */,
+				E0B783761FB2D3D20018A27E /* Frameworks */,
+				E0B783771FB2D3D20018A27E /* Resources */,
+				CB686FF2E421E1BB212B175E /* [CP] Embed Pods Frameworks */,
+				604B16078A441FEA64CFA363 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DraggableButton;
+			productName = DraggableButton;
+			productReference = E0B783791FB2D3D20018A27E /* DraggableButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0B783711FB2D3D20018A27E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Adhitya Surya Pratama";
+				TargetAttributes = {
+					E0B783781FB2D3D20018A27E = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E0B783741FB2D3D20018A27E /* Build configuration list for PBXProject "DraggableButton" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E0B783701FB2D3D20018A27E;
+			productRefGroup = E0B7837A1FB2D3D20018A27E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0B783781FB2D3D20018A27E /* DraggableButton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0B783771FB2D3D20018A27E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B783871FB2D3D20018A27E /* LaunchScreen.storyboard in Resources */,
+				E0B783841FB2D3D20018A27E /* Assets.xcassets in Resources */,
+				E0B783821FB2D3D20018A27E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		604B16078A441FEA64CFA363 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DraggableButton/Pods-DraggableButton-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB686FF2E421E1BB212B175E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DraggableButton/Pods-DraggableButton-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DragDropiOS/DragDropiOS.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DragDropiOS.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DraggableButton/Pods-DraggableButton-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E08AB92AB16675771409BE29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DraggableButton-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0B783751FB2D3D20018A27E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B783931FB2ED520018A27E /* Model.swift in Sources */,
+				E0B7838F1FB2E69C0018A27E /* DroppableCollectionView.swift in Sources */,
+				E0B7837F1FB2D3D20018A27E /* ViewController.swift in Sources */,
+				E0B783911FB2E7AA0018A27E /* DroppableView.swift in Sources */,
+				E0B7837D1FB2D3D20018A27E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E0B783801FB2D3D20018A27E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0B783811FB2D3D20018A27E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E0B783851FB2D3D20018A27E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0B783861FB2D3D20018A27E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0B783891FB2D3D20018A27E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E0B7838A1FB2D3D20018A27E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0B7838C1FB2D3D20018A27E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA88B5DAFEB4C70D1DDA7AE /* Pods-DraggableButton.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76SWNMLHBD;
+				INFOPLIST_FILE = DraggableButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adhitya.DraggableButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E0B7838D1FB2D3D20018A27E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72691D82790DCA9DC5A10559 /* Pods-DraggableButton.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76SWNMLHBD;
+				INFOPLIST_FILE = DraggableButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adhitya.DraggableButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0B783741FB2D3D20018A27E /* Build configuration list for PBXProject "DraggableButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0B783891FB2D3D20018A27E /* Debug */,
+				E0B7838A1FB2D3D20018A27E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0B7838B1FB2D3D20018A27E /* Build configuration list for PBXNativeTarget "DraggableButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0B7838C1FB2D3D20018A27E /* Debug */,
+				E0B7838D1FB2D3D20018A27E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0B783711FB2D3D20018A27E /* Project object */;
+}
